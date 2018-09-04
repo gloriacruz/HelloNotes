@@ -1,0 +1,122 @@
+body {
+	overflow: hidden;
+}
+
+.paper {
+	font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+	margin: 0 auto;
+	padding: 6px 5px 4px 42px;
+	position: relative;
+	color: #444;
+	line-height: 20px;
+	border: 1px solid #d2d2d2;
+	background: #fff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+	background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	-webkit-background-size: 100% 20px;
+	-moz-background-size: 100% 20px;
+	-ms-background-size: 100% 20px;
+	-o-background-size: 100% 20px;
+	background-size: 100% 20px;
+	width: 100%;
+	height: 1056px;
+}
+
+.yellow-note {
+	background: #f4f7af;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6a6b5b), color-stop(4%, #f4f7af)) 0 4px;
+	background: -webkit-linear-gradient(top, #6a6b5b 0%, #f4f7af 8%) 0 4px;
+	background: -moz-linear-gradient(top, #6a6b5b 0%, #f4f7af 8%) 0 4px;
+	background: -ms-linear-gradient(top, #6a6b5b 0%, #f4f7af 8%) 0 4px;
+	background: -o-linear-gradient(top, #6a6b5b 0%, #f4f7af 8%) 0 4px;
+	background: linear-gradient(top, #6a6b5b 0%, #f4f7af 8%) 0 4px;
+	-webkit-background-size: 100% 20px;
+	-moz-background-size: 100% 20px;
+	-ms-background-size: 100% 20px;
+	-o-background-size: 100% 20px;
+	background-size: 100% 20px;
+}
+
+.pink-note {
+	background: #f7def1;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#aaa9a9), color-stop(4%, #f7def1)) 0 4px;
+	background: -webkit-linear-gradient(top, #aaa9a9 0%, #f7def1 8%) 0 4px;
+	background: -moz-linear-gradient(top, #aaa9a9 0%, #f7def1 8%) 0 4px;
+	background: -ms-linear-gradient(top, #aaa9a9 0%, #f7def1 8%) 0 4px;
+	background: -o-linear-gradient(top, #aaa9a9 0%, #f7def1 8%) 0 4px;
+	background: linear-gradient(top, #aaa9a9 0%, #f7def1 8%) 0 4px;
+	-webkit-background-size: 100% 20px;
+	-moz-background-size: 100% 20px;
+	-ms-background-size: 100% 20px;
+	-o-background-size: 100% 20px;
+	background-size: 100% 20px;
+}
+
+.paper::before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	top: 0;
+	left: 30px;
+	bottom: 0;
+	border: 1px solid;
+	border-color: transparent #efe4e4;
+}
+
+.head {
+	background-color: #FFF;
+	min-height: 40px;
+	margin-left: -42px;
+	margin-right: -5px;
+	margin-top: -4px;
+	margin-bottom: 9px;
+}
+
+.yellow-head {
+	background-color: #f4f7af;
+}
+
+.pink-head {
+	background-color: #f7def1;
+}
+
+.info {
+	padding-left: 5px;
+	padding-top: 0px;
+	font-size: 18px;
+	color: #b4b4b4;
+	display: inline-block;
+}
+
+.info .tooltiptext {
+    visibility: hidden;
+    background-color: #eb8f50;
+    color: #fff;
+	font-size: 12px;
+	font-family: Helvetica;
+    text-align: left;
+    border-radius: 6px;
+	border: none;
+    padding: 5px 5px 5px 5px;
+	resize: none;
+    top: -5px;
+	opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.info:hover .tooltiptext {
+    visibility: visible;
+	opacity: 1;
+}
+
+.resultBox {
+	color: red;
+}
+
+.space {
+	height: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Notes Extension</title>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+		<!-- Tableau Extensions API Library  -->
+		<script src="./lib/tableau-extensions-1.latest.js"></script>
+
+		<!-- Your JavaScript code that uses the Extensions API goes here -->
+		<script src="./hellonotes.js"></script>
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./hellonotes.css" >
+		
+	</head>
+	<body>
+	 <div>
+		 <div id="choose_color_dialog" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h5 class="modal-title">Choose a color for your note</h5>
+			  </div>
+			  <div class="modal-body">
+				<div id="choose_color_buttons"></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<section id="paper" class="paper">
+			<article id="head" class="head">
+				<div class="info">&#x1F6C8;&nbsp&nbsp&nbsp<textarea rows="2" cols="30" readonly disabled class="tooltiptext">Pull the corners to resize and move note arround from the top-center</textarea>
+				</div>
+			</article>
+			<article id="comment" contenteditable="true">Start typing here!</article>
+			<p id="space">&nbsp</p>
+			<p><button type="button" id="saveButton" class="btn btn-primary">Save</button></p>
+			<p id="resultBox"></p>
+		</section>
+	 </div>
+	</body>
+</html>
