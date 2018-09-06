@@ -113,6 +113,10 @@ body {
 	opacity: 1;
 }
 
+.info-image {
+	width: 15px;
+}
+
 .resultBox {
 	color: red;
 }
